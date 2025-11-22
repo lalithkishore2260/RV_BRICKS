@@ -1,0 +1,161 @@
+/* stylelint-disable at-rule-no-unknown */
+/* Use @import form of Tailwind so linters/parsers that don't recognize @tailwind succeed */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+/* stylelint-enable at-rule-no-unknown */
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    /* Brick Red as primary */
+    --primary: 2 68% 38%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 2 68% 48%;
+    --primary-dark: 2 68% 28%;
+
+    /* Gold as secondary accent */
+    --secondary: 49 85% 41%;
+    --secondary-foreground: 0 0% 10%;
+    --secondary-light: 49 85% 51%;
+    
+    /* Muted grays for backgrounds */
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 49 85% 41%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 2 68% 38%;
+
+    --radius: 0.5rem;
+    
+    /* Custom design tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(2 68% 38%), hsl(2 68% 28%));
+    --gradient-accent: linear-gradient(135deg, hsl(49 85% 41%), hsl(49 85% 51%));
+    --gradient-hero: linear-gradient(135deg, hsl(2 68% 38% / 0.95), hsl(0 0% 10% / 0.95));
+    
+    --shadow-subtle: 0 2px 8px hsl(0 0% 0% / 0.05);
+    --shadow-medium: 0 4px 16px hsl(0 0% 0% / 0.1);
+    --shadow-large: 0 8px 32px hsl(0 0% 0% / 0.15);
+    --shadow-glow: 0 0 40px hsl(2 68% 38% / 0.2);
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 2 68% 48%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 2 68% 58%;
+    --primary-dark: 2 68% 38%;
+
+    --secondary: 49 85% 51%;
+    --secondary-foreground: 0 0% 10%;
+    --secondary-light: 49 85% 61%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 49 85% 51%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 2 68% 48%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(2 68% 48%), hsl(2 68% 38%));
+    --gradient-accent: linear-gradient(135deg, hsl(49 85% 51%), hsl(49 85% 61%));
+    --gradient-hero: linear-gradient(135deg, hsl(2 68% 48% / 0.95), hsl(0 0% 10% / 0.95));
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+}
