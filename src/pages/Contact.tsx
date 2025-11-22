@@ -237,7 +237,7 @@ const Contact = () => {
                   <p className="font-semibold">Monday - Saturday: 9:00 AM - 6:00 PM</p>
                   <p className="font-semibold">Sunday: Closed</p>
                   <p className="text-sm text-muted-foreground mt-2">
-                    *Weigh Bridge available 24/7
+                   
                   </p>
                 </CardContent>
               </Card>
