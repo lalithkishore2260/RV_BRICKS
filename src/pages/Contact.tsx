@@ -183,8 +183,7 @@ const Contact = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground mb-2">Call us for immediate assistance</p>
-                  <p className="font-semibold">+91 9087973961</p>
+                  <p className="text-muted-foreground mb-2">Text us for immediate assistance</p>
                   <p className="font-semibold">+91 6383420651</p>
                 </CardContent>
               </Card>
@@ -200,7 +199,7 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-2">Send us an email anytime</p>
-                  <p className="font-semibold">info@rvbricks.com</p>
+                  <p className="font-semibold">sanjurv335@gmail.com</p>
                 </CardContent>
               </Card>
 
@@ -234,8 +233,8 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-2">We're available</p>
-                  <p className="font-semibold">Monday - Saturday: 9:00 AM - 6:00 PM</p>
-                  <p className="font-semibold">Sunday: Closed</p>
+                  <p className="font-semibold">Monday - Sunday: 9:00 AM - 6:00 PM</p>
+                  <p className="font-semibold">All Day Open</p>
                   <p className="text-sm text-muted-foreground mt-2">
                    
                   </p>
