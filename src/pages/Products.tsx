@@ -82,11 +82,11 @@ const Products = () => {
                 <CardTitle className="text-lg">Dimensions</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-2xl font-bold text-primary mb-2">230mm</p>
+                <p className="text-2xl font-bold text-primary mb-2">9-Inch</p>
                 <p className="text-sm text-muted-foreground">Length</p>
-                <p className="text-2xl font-bold text-primary mb-2 mt-3">110mm</p>
+                <p className="text-2xl font-bold text-primary mb-2 mt-3">4-Inch</p>
                 <p className="text-sm text-muted-foreground">Width</p>
-                <p className="text-2xl font-bold text-primary mb-2 mt-3">70mm</p>
+                <p className="text-2xl font-bold text-primary mb-2 mt-3">3-Inch</p>
                 <p className="text-sm text-muted-foreground">Height</p>
               </CardContent>
             </Card>
@@ -131,7 +131,7 @@ const Products = () => {
                 <CardTitle className="text-lg">Packaging</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-2xl font-bold text-primary mb-2">500</p>
+                <p className="text-2xl font-bold text-primary mb-2">2500-5000</p>
                 <p className="text-sm text-muted-foreground mb-6">Bricks per Load</p>
                 <p className="text-muted-foreground text-sm">
                   Secure packaging for safe transportation and delivery
